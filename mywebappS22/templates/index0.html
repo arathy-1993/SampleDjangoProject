@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The city of Windsor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+  </head>
+
+    <body>
+
+	    <h1>Welcome to the Windsor City!!</h1>
+
+    	<h2>The automotive capital of Canada</h2>
+
+        <div>
+
+			<div id="links-div">
+             <ul class="nav nav-tabs">
+                 <li class="hbar1"><a class="category" href = "/home">Home</a></li>
+                 <li class="hbar1"><a class="category" href = "/about">About</a></li>
+                 <li class="hbar1"><a class="category" href = "/photogallery">Photo Gallery</a></li>
+                 <li class="hbar1"><a class="category" href = "/myaccount">My Account</a></li>
+                 <li class="hbar1"><a class="category" href = "/register">Register</a></li>
+             </ul>
+			</div>
+			<div id="products">
+				<p><a href = "/attraction"><b>Attractions</a>:</b>Windsor is a large city located in the province of Ontario which can be found in South Canada. It is well known as the southernmost city of Canada. Windsor is located on the southern banks of the river of Detroit, opposite the city of Detroit in Michigan, right between the lakes of Erie and Saint Clair.</p>
+				<p><a href = "/sports"><b>Sports Teams</a>:</b>The Windsor Lancers are the varsity athletic teams that represent the University of Windsor in Windsor, Ontario, Canada. The school's varsity program supports 9 different sports. Their mascot is a lancer and the team's colours are blue and gold.</p>
+			</div>
+
+        </div>
+
+    </body>
+</html>

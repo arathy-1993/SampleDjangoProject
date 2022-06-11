@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+		<title> Register Page </title>
+		<!--<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+
+
+        <script type = "text/javascript">
+            //alert("You have registered successfully!");
+            function write_message()
+            {
+            var form = document.getElementById("myform");
+            //form.addEventListener("submit", (e) => {
+                //e.preventDefault();
+                //console.log("hello");
+                if(form.checkValidity()) {
+                    alert("You have registered successfully!");
+                } else {
+                    alert("You have NOT registered successfully!");
+                }
+
+            //});
+                //document.getElementById('form_submission_text').innerHTML="You have registered successfully!";
+                //form.submit();
+                //form.reset();
+
+            //return false;
+            }
+        </script>
+
+	</head>
+
+	<body>
+
+		<div id="weblogo">
+			<!--<img src="logo.png" width="120" height="100px">-->
+		</div>
+	    <h1>Welcome to the Windsor City!!</h1>
+
+    	<h2>The automotive capital of Canada</h2>
+
+        <div id="links-div">
+             <ul class="nav nav-tabs">
+                 <li class="hbar1"><a class="category" href = "/home">Home</a></li>
+                 <li class="hbar1"><a class="category" href = "/about">About</a></li>
+                 <li class="hbar1"><a class="category" href = "/photogallery">Photo Gallery</a></li>
+                 <li class="hbar1"><a class="category" href = "/myaccount">My Account</a></li>
+                 <li class="hbar1"><a class="category" href = "/register">Register</a></li>
+             </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-lg-3"></div>
+            <div class="col-md-6 col-sm-6 col-lg-6">
+
+                <form id="myform" method="POST">
+                    <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" required><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <input type="submit" value="Submit" onclick="write_message();"><br>
+
+                    <p>NOTE: Registering to receive email updates about upcoming events in the city</p><br><br>
+                    <!--<div id="form_submission_text"></div>-->
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3"></div>
+        </div>
+    	<!--<h2 style="color: blue;">This is the about page</h2>
+
+        <div>
+
+         <div id="links-div">
+             <ul class="nav nav-tabs">
+                 <li class="hbar1"><a class="category" href = "index.html">Home</a></li>
+                 <li class="hbar1"><a class="category" href = "about.html">About</a></li>
+                 <li class="hbar1"><a class="category" href = "myacct.html">My Account</a></li>
+                 <li class="hbar1"><a class="category" href = "purchase.html">Purchase Online</a></li>
+             </ul>
+        </div>-->
+		<!--<h3 class="para"> LifeSport </h3>
+
+		<h4 class="para"> Our company is proud to offer you the best quality products <br>
+		your shopping experience with LifeSport will be unforgetable </h4></p>-->
+
+	</body>
+</html>
+

@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title> About Windsor </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+         <style>
+           #para-content{
+             color: black;
+             text-align: justify;
+             margin-left: 50px;
+             margin-right: 50px;
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: bold;
+        }
+        </style>
+	</head>
+
+	<body>
+		<!--<div id="weblogo">
+			<img src="logo.png" width="120" height="100px">
+		</div>-->
+
+	    <h1>Welcome to the Windsor City!!</h1>
+
+    	<h2>The automotive capital of Canada</h2>
+
+        <!--<div>-->
+
+        <div id="links-div">
+             <ul class="nav nav-tabs">
+                 <li class="hbar1"><a class="category" href = "/home">Home</a></li>
+                 <li class="hbar1"><a class="category" href = "/about">About</a></li>
+                 <li class="hbar1"><a class="category" href = "/photogallery">Photo Gallery</a></li>
+                 <li class="hbar1"><a class="category" href = "/myaccount">My Account</a></li>
+                 <li class="hbar1"><a class="category" href = "/register">Register</a></li>
+             </ul>
+        </div>
+
+        <h3 class="para-head">History</h3>
+        <p>
+            <h4 id="para-content">In 1935, Windsor, Sandwich, East Windsor and Walkerville united to form the
+            City of Windsor. This amalgamation was intended to address the crushing debt and social demands brought
+            by the Great Depression. In the 1960s, the City of Windsor looked to surrounding communities to expand
+            its land and tax base. The city attempted to annex the towns of Tecumseh, Riverside, Ojibway, all or part
+            of St. Clair Beach and parts of the townships of Sandwich East, Sandwich West, and Sandwich South.
+            It was a topic of heated debate. In the end, it was decided that Riverside, Ojibway and parts of
+            Sandwich townships would become part of Windsor. Windsor continues to grow. Another annexation of land,
+            from the Town of  Tecumseh, occurred in 2003 to create the current border of the City of Windsor.</h4>
+        </p>
+
+        <h3 class="para-head">Location</h3>
+        <p>
+            <h4 id="para-content">Windsor is a large city located in the province of Ontario which can be found
+            in South Canada. It is well known as the southernmost city of Canada. Windsor is located on the
+            southern banks of the river of Detroit, opposite the city of Detroit in Michigan, right between
+            the lakes of Erie and Saint Clair.</h4>
+        </p>
+
+        <h3 class="para-head">Climate</h3>
+        <p>
+            <h4 id="para-content">Located in the far south of Ontario, close to the American city
+            of Detroit, Windsor enjoys the warmest climate of any of Ontario’s cities.
+            Windsor has a semi-continental climate, with a warm, humid summer and a cold winter.</h4>
+        </p>
+
+        <h3 class="para-head">Culture</h3>
+        <p>
+            <h4 id="para-content">Even if you spend a day in Windsor you'll notice that it's a very
+            multi-cultural city, especially for its small town feel. Right off the bat, visitors will hear
+            English, French, Arabic and Italian. Near the east side of the downtown area is the North African/Middle
+            Eastern neighbourhoods with a large Lebanese community. Southeast of the downtown area is the
+            Via Italia neighbourhood, with numerous Italian restaurants and shops. West of the downtown
+            area is an area with strong Asian influences.</h4>
+        </p>
+	</body>
+</html>
+
